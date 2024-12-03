@@ -1,0 +1,37 @@
+/* Slidebar.css */
+
+.slidebar {
+    width: 250px; /* Set a width for the sidebar */
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px; /* Add some padding */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    height: 100vh; /* Full height */
+}
+
+.slidebar-item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add padding around items */
+    margin: 10px 0; /* Add margin between items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.slidebar-item img {
+    width: 24px; /* Set a fixed width for icons */
+    height: 24px; /* Set a fixed height for icons */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.slidebar-item p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Set font size */
+    color: #333; /* Text color */
+}
+
+.slidebar-item:hover {
+    background-color: #e9ecef; /* Change background on hover */
+}

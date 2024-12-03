@@ -1,0 +1,64 @@
+/* Popular.css */
+
+.popular-products {
+    padding: 2rem; /* Espaciado interno */
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+.popular-products h2 {
+    font-size: 2rem; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    margin-bottom: 1.5rem; /* Margen inferior */
+    text-align: center; /* Centrar el título */
+}
+
+.products-list {
+    display: grid; /* Usar cuadrícula para el diseño */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste automático de columnas */
+    gap: 1.5rem; /* Espaciado entre productos */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar la cuadrícula */
+}
+
+.product-item {
+    background-color: #fff; /* Fondo blanco para cada producto */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 1rem; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    text-decoration: none; /* Eliminar subrayado en enlaces */
+}
+
+.product-item:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}
+
+.product-item img {
+    max-width: 100%; /* Asegurar que la imagen no exceda el contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-bottom: 0.5rem; /* Margen inferior para separación */
+}
+
+.product-item h3 {
+    font-size: 1.2rem; /* Tamaño del nombre del producto */
+    color: #333; /* Color del texto */
+    margin: 0.5rem 0; /* Margen superior e inferior */
+}
+
+.product-item p {
+    font-size: 1rem; /* Tamaño del texto de categoría */
+    color: #666; /* Color del texto secundario */
+    margin: 0; /* Sin margen */
+}
+
+/* Limitando la cantidad de productos a mostrar */
+@media (max-width: 768px) {
+    .products-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajustar columnas en pantallas más pequeñas */
+    }
+}

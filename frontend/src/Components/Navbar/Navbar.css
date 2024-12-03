@@ -1,0 +1,144 @@
+/* Navbar.css */
+.header {
+    background-color: #ffffff;
+    box-shadow: none; /* Eliminar sombra */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif; /* Usar la fuente Poppins */
+    height: 110px; /* Establecer la altura del navbar */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; /* Espaciado aumentado */
+    height: 100%; /* Asegura que el contenido ocupe toda la altura */
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo img {
+    width: 90px; /* Tamaño del logo aumentado */
+    margin-right: 20px;
+}
+
+.nav__logo p {
+    font-size: 1.8rem; /* Tamaño de fuente aumentado */
+    font-weight: 600; /* Peso de fuente más fuerte */
+    color: #333;
+}
+
+.nav__menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin: 0 25px; /* Espaciado entre elementos aumentado */
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #ffffff; /* Color de texto blanco */
+    font-weight: 600; /* Peso de fuente más fuerte */
+    padding: 10px 15px; /* Espaciado aumentado */
+    border-radius: 30px; /* Bordes más redondeados */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transición más suave */
+}
+
+.nav__link.inicio {
+    background-color: #ff8b45; /* Café amarillento */
+}
+
+.nav__link.culmen {
+    background-color: #D2691E; /* Café amarillento */
+}
+
+.nav__link.vertice {
+    background-color: #D5006D; /* Fucsia */
+}
+
+.nav__link.accion {
+    background-color: #FF4500; /* Naranja */
+}
+
+.nav__link:hover {
+    transform: scale(1.05); /* Efecto de escalado al pasar el ratón */
+}
+
+.nav__login-cart {
+    display: flex;
+    align-items: center;
+}
+
+.nav__cart {
+    margin-right: 90px; /* Espaciado entre carrito y login */
+}
+
+/* Diseño del mensaje de bienvenida */
+.nav__user {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav__user span {
+    font-weight: 600;
+    margin-right: 10px;
+    color: #FF4500; /* Color naranjo para el nombre del usuario */
+}
+
+.nav__cta {
+    background-color: #FF4500; /* Color de fondo del botón en naranja */
+    color: #ffffff;
+    border: none;
+    border-radius: 30px; /* Bordes más redondeados */
+    padding: 10px 20px; /* Espaciado aumentado */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav__cta:hover {
+    background-color: #e03e00; /* Naranja más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escalado al pasar el ratón */
+}
+
+.nav-cart-count {
+    background-color: #ff4757; /* Color de fondo del contador del carrito */
+    color: #ffffff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    position: relative;
+    top: -10px; /* Ajuste de posición */
+    right: -10px; /* Ajuste de posición */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav__link.productos {
+    background-color: #4CAF50; /* Verde para el nuevo apartado */
+}
+
+.nav__link.productos:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Estilo para el contenido principal */
+.main-content {
+    padding-top: 80px; /* Relleno superior para evitar que el contenido quede cubierto por el navbar */
+}

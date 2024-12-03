@@ -1,0 +1,203 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #f8f9fa; /* Fondo claro */
+    gap: 2rem;
+    flex-wrap: wrap; /* Diseño adaptable para pantallas pequeñas */
+    border-bottom: 2px solid #e0e0e0; /* Línea decorativa inferior */
+    animation: fadeIn 1s ease-in-out; /* Efecto de entrada */
+}
+
+/* Hero Left Section */
+.hero-left {
+    flex: 1;
+    max-width: 950px;
+    padding: 1rem; /* Añade espacio interno */
+}
+
+.hero-left h2 {
+    font-size: 2.8rem; /* Título más grande */
+    margin-bottom: 1rem;
+    color: #2c3e50; /* Azul oscuro elegante */
+    line-height: 1.3; /* Mejor separación entre líneas */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+    animation: slideInLeft 0.8s ease; /* Entrada animada */
+}
+
+.hero-left p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8; /* Mejora la legibilidad */
+    color: #555; /* Texto en gris suave */
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+    animation: fadeIn 1s ease-in-out; /* Entrada suave */
+}
+
+/* Hero Button */
+.hero-button {
+    background: linear-gradient(90deg, #d6226d, #0056b3); /* Gradiente atractivo */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 3rem;    
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    overflow: hidden;
+}
+
+.hero-button:hover {
+    background: linear-gradient(90deg, #0056b3, #003f7f); /* Cambia el gradiente */
+    transform: translateY(-3px); /* Elevación */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Hero Right Section */
+.hero-right {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Diseño adaptable */
+    gap: 2rem;
+    flex: 1;
+    padding: 1rem; /* Espaciado interno */
+    animation: slideInRight 0.8s ease; /* Entrada animada */
+}
+
+/* Product Card */
+.product-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden; /* Oculta contenido extra */
+}
+
+.product-image:hover {
+    transform: scale(1.08); /* Efecto de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Más profundidad */
+}
+
+/* Floating Badge for Products */
+.product-image::before {
+    content: "Destacado"; /* Etiqueta flotante */
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: #ff4757;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-image img {
+    width: 100%;
+    max-width: 180px; /* Ajusta el tamaño máximo */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-image img:hover {
+    transform: scale(1.1); /* Zoom interactivo */
+}
+
+/* Product Text */
+.product-image p {
+    font-size: 1rem;
+    margin: 0;
+    color: #333; /* Texto en gris oscuro */
+    font-weight: 600; /* Resalta el texto */
+    text-transform: capitalize; /* Primera letra en mayúsculas */
+}
+
+/* Global Adjustments */
+body {
+    padding-top: 80px; /* Espacio igual a la altura del navbar */
+    font-family: 'Arial', sans-serif; /* Fuente legible */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-left {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-right {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .hero-left h2 {
+        font-size: 2rem; /* Reduce el tamaño del título */
+    }
+
+    .hero-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-left p {
+        font-size: 1rem; /* Texto más compacto */
+    }
+
+    .product-image img {
+        max-width: 140px; /* Ajusta las imágenes en pantallas pequeñas */
+    }
+}

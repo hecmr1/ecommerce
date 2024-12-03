@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500;700&display=swap');
+
+.pleas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pleas-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pleas-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.pleas-text {
+    max-width: 100%;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.pleas-paragraph, .pleas-benefits-paragraph {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    color: #444;
+    margin: 20px 0;
+}
+
+.pleas-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .pleas-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pleas-text {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .pleas-image {
+        max-width: 90%;
+    }
+}

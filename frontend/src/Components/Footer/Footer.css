@@ -1,0 +1,76 @@
+.footer {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-color: #f8f9fa; /* Color de fondo claro */
+    padding: 2rem; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    border-top: 1px solid #e0e0e0; /* Línea superior sutil */
+}
+
+.footer img {
+    max-width: 150px; /* Tamaño máximo para el logo */
+    margin-bottom: 1rem; /* Espacio debajo del logo */
+}
+
+.footer p {
+    font-size: 1.5rem; /* Tamaño de fuente para el nombre */
+    font-weight: bold; /* Negrita para el nombre */
+    color: #333; /* Color del texto */
+    margin: 0; /* Elimina márgenes */
+}
+
+.footer-links {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Elimina padding */
+    margin: 1rem 0; /* Espacio arriba y abajo */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centra los elementos */
+}
+
+.footer-links li {
+    margin: 0 1rem; /* Espaciado entre los elementos de la lista */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los elementos */
+    font-size: 1rem; /* Tamaño de fuente para los enlaces */
+    color: #007BFF; /* Color del texto de los enlaces */
+    transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.footer-links li:hover {
+    color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+.footer-social-icon {
+    display: flex; /* Usa flexbox para alinear los iconos */
+    justify-content: center; /* Centra los iconos */
+    margin: 1rem 0; /* Espacio arriba y abajo */
+}
+
+.footer-icons-container {
+    margin: 0 0.5rem; /* Espaciado entre los iconos */
+}
+
+.footer-icons-container img {
+    width: 30px; /* Tamaño de los iconos */
+    height: auto; /* Mantiene la proporción */
+    transition: transform 0.3s; /* Transición suave para el hover */
+}
+
+.footer-icons-container img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.copyright {
+    margin-top: 1rem; /* Espacio arriba del copyright */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    color: #666; /* Color del texto del copyright */
+}
+
+.copyright hr {
+    width: 100%; /* Línea horizontal que ocupa todo el ancho */
+    border: 0; /* Elimina el borde */
+    height: 1px; /* Altura de la línea */
+    background-color: #e0e0e0; /* Color de la línea */
+    margin: 1rem 0; /* Espacio arriba y abajo de la línea */
+}

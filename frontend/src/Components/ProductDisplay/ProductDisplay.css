@@ -1,0 +1,168 @@
+/* Contenedor principal */
+.productdisplay {
+    display: flex;
+    gap: 20px;
+    padding: 80px 20px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 120;
+  }
+  
+  /* Sección izquierda (imágenes) */
+  .productdisplay-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Lista de miniaturas de imágenes */
+  .productdisplay-img-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .productdisplay-img-list img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  
+  .productdisplay-img-list img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+  }
+  
+  /* Imagen principal */
+  .productdisplay-img {
+    text-align: center;
+  }
+  
+  .productdisplay-main-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Sección derecha (detalles del producto) */
+  .productdisplay-right {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .productdisplay-right h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Estrellas de calificación */
+  .productdisplay-right-star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .productdisplay-right-star img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .productdisplay-right-star p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Precios */
+  .productdisplay-right-prices {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .productdisplay-right-prices-old {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 18px;
+  }
+  
+  .productdisplay-right-prices-new {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e63946;
+  }
+  
+  /* Descripción */
+  .productdisplay-right-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Tamaños disponibles */
+  .productdisplay-right-size {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .productdisplay-right-size h1 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .productdisplay-right-size-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .productdisplay-right-size-options div {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .productdisplay-right-size-options div:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Botón de añadir al carrito */
+  button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Categorías y tags */
+  .productdisplay-right-category {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .productdisplay-right-category span {
+    font-weight: bold;
+    color: #333;
+  }
+  

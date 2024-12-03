@@ -1,0 +1,88 @@
+/* LoginSignup.css */
+
+.loginsignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+.loginsignup-container {
+  background-color: #fff; /* Fondo blanco para el contenedor */
+  padding: 2rem; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+  width: 400px; /* Ancho fijo del contenedor */
+}
+
+.loginsignup-container h1 {
+  text-align: center; /* Centrar el título */
+  margin-bottom: 1.5rem; /* Margen inferior */
+  color: #333; /* Color del texto */
+}
+
+.loginsignup-container form {
+  display: flex;
+  flex-direction: column; /* Colocar los inputs en columna */
+}
+
+.loginsignup-container input {
+  margin-bottom: 1rem; /* Espaciado entre inputs */
+  padding: 0.75rem; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde gris */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+
+.loginsignup-container input:focus {
+  border-color: #007bff; /* Color del borde al enfocar */
+  outline: none; /* Eliminar el contorno predeterminado */
+}
+
+.loginsignup-container button {
+  padding: 0.75rem; /* Espaciado interno */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.loginsignup-container button:hover {
+  background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+.error-message {
+  color: red; /* Color rojo para el mensaje de error */
+  text-align: center; /* Centrar el mensaje de error */
+  margin-top: 1rem; /* Margen superior */
+}
+
+.loginSignup-login {
+  color: #007bff; /* Color del enlace */
+  text-align: center; /* Centrar el texto */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el texto */
+  margin-top: 1rem; /* Margen superior */
+}
+
+.loginSignup-login:hover {
+  text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+.loginsignup-agree {
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+  margin-top: 1rem; /* Margen superior */
+}
+
+.loginsignup-agree input {
+  margin-right: 0.5rem; /* Margen derecho para separación */
+}
+
+.loginsignup-agree p {
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  color: #666; /* Color del texto */
+}

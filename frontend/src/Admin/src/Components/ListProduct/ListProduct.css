@@ -1,0 +1,76 @@
+/* ListProduct.css */
+
+.list-product {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.listproduct-format-main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.listproduct-format-main p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.listproduct-allproducts {
+    display: flex;
+    flex-direction: column;
+}
+
+.listproduct-format {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.listproduct-format img {
+    max-width: 100px; /* Adjust as needed */
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.listproduct-remove-icon {
+    cursor: pointer;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    margin-left: auto; /* Align icon to the right */
+}
+
+.listproduct-remove-icon:hover {
+    opacity: 0.7; /* Add hover effect */
+}
+
+.listproduct-format p {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    color: #555;
+}
+
+.listproduct-format p:nth-child(3), .listproduct-format p:nth-child(4) {
+    color: #2c3e50; /* Price color */
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
